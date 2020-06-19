@@ -22,8 +22,6 @@ case $target in
         install_deps
         PKGEXT='.pkg.tar' makepkg --syncdeps --noconfirm
         namcap "${pkgname}"-*
-        pacman -Qip "${pkgname}"-*
-        pacman -Qlp "${pkgname}"-*
         ;;
     run)
         install_deps

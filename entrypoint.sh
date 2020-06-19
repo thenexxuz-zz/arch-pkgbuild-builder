@@ -8,11 +8,6 @@ command=$3
 # set the owner to the 'build' user, so it can access package files
 sudo chown -R build /github/workspace /github/home
 
-# assumes that package files are in a subdirectory
-# of the same name as "pkgname", so this works well
-# with "aurpublish" tool
-cd "$pkgname" || exit
-
 install_deps() {
     # install make and regular package dependencies
     grep -E 'depends|makedepends' PKGBUILD | \

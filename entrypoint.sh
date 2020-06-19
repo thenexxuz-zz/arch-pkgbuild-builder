@@ -20,7 +20,7 @@ case $target in
     pkgbuild)
         namcap PKGBUILD
         install_deps
-        makepkg --syncdeps --noconfirm
+        PKGEXT='.pkg.tar' makepkg --syncdeps --noconfirm
         namcap "${pkgname}"-*
         pacman -Qip "${pkgname}"-*
         pacman -Qlp "${pkgname}"-*

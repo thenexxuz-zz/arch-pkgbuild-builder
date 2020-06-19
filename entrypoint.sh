@@ -25,7 +25,7 @@ case $target in
         ;;
     run)
         install_deps
-        makepkg --syncdeps --noconfirm --install
+        PKGEXT='.pkg.tar' makepkg --syncdeps --noconfirm --install
         eval "$command"
         ;;
     srcinfo)

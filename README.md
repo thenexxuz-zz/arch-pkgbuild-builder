@@ -10,7 +10,7 @@ This assumption is made so this action works well with [aurpublish].
 
 ### `target`
 
-**Required** Validation target. Can be one of: `pkgbuild`, `srcinfo`, `run`.
+**Required** Validation target. Can be one of: `pkgbuild`, `srcinfo`.
 
 ### `pkgname`
 
@@ -40,20 +40,9 @@ with:
   pkgname: 'ucm-bin'
 ```
 
-### run
-
-Installs the package and runs a given `command`.
-
-```yml
-uses: 2m/arch-pkgbuild-builder@v1
-with:
-  target: 'run'
-  pkgname: 'ucm-bin'
-  command: `ucm --version`
-```
-
 ## Used by
 
 So far this action is used by the following packages:
 
+* [gitkraken](https://github.com/Azd325/gitkraken)
 * [ucm-bin](https://github.com/2m/ucm-bin-pkgbuild)

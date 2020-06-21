@@ -17,10 +17,10 @@
 Verifies and builds the package.
 
 ```yml
-uses: 2m/arch-pkgbuild-builder@v1
+uses: Azd325/arch-pkgbuild-builder@master
 with:
   target: 'pkgbuild'
-  pkgname: 'ucm-bin'
+  pkgname: 'gitkraken'
 ```
 
 ### srcinfo
@@ -28,10 +28,10 @@ with:
 Verifies if the `.SRCINFO` is up to date with the `PKGBUILD`.
 
 ```yml
-uses: 2m/arch-pkgbuild-builder@v1
+uses: Azd325/arch-pkgbuild-builder@master
 with:
   target: 'srcinfo'
-  pkgname: 'ucm-bin'
+  pkgname: 'gitkraken'
 ```
 
 ## Used by

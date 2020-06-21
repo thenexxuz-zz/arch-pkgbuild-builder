@@ -21,7 +21,7 @@ case $target in
         namcap PKGBUILD
         install_deps
         PKGEXT='.pkg.tar' makepkg --syncdeps --noconfirm
-        namcap "${pkgname}"-*
+        namcap "${pkgname}"-*.pkg.tar
         ;;
     run)
         install_deps

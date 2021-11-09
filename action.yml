@@ -19,5 +19,6 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.target }}
+    - ${{ inputs.builddir }}
     - ${{ inputs.pkgname }}
     - ${{ inputs.command }}

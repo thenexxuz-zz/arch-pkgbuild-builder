@@ -1,8 +1,9 @@
 #!/bin/sh -l
 
 target=$1
-pkgname=$2
-command=$3
+builddir=$2
+pkgname=$3
+command=$4
 
 # '/github/workspace' is mounted as a volume and has owner set to root
 # set the owner to the 'build' user, so it can access package files
@@ -11,7 +12,7 @@ sudo chown -R build /github/workspace /github/home
 # assumes that package files are in a subdirectory
 # of the same name as "pkgname", so this works well
 # with "aurpublish" tool
-cd "$pkgname" || exit
+cd "$builddir" || exit
 
 case $target in
     pkgbuild)

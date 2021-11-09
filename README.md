@@ -20,6 +20,7 @@ Verifies and builds the package.
 uses: Azd325/arch-pkgbuild-builder@master
 with:
   target: 'pkgbuild'
+  builddir: 'gitkraken-aur'
   pkgname: 'gitkraken'
 ```
 
@@ -31,6 +32,7 @@ Verifies if the `.SRCINFO` is up to date with the `PKGBUILD`.
 uses: Azd325/arch-pkgbuild-builder@master
 with:
   target: 'srcinfo'
+  builddir: 'gitkraken-aur'
   pkgname: 'gitkraken'
 ```
 
